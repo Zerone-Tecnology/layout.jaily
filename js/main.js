@@ -1,11 +1,6 @@
-const text = document.querySelector(".circle_text p");
-text.innerHTML = text.innerHTML.split("").map((char, i) => `<span style="transform:rotate(${i * 10.5}deg)">${char}</span>`).join("");
-
-
-const text2 = document.querySelector(".circle_text_2 p");
-text2.innerHTML = text2.innerHTML
-    .split("")
-    .map(
-        (char, i) => `<span style="transform:rotate(${i * 10.5}deg)">${char}</span>`
-    )
-    .join("");
+window.onload = function () {
+    var text = document.querySelectorAll(".circle_p");
+    for (var i = 0; i < text.length; i++) {
+        text[i].innerHTML = text[i].innerHTML.split("").map((char, i) => `<span style="transform:rotate(${i * 10.5}deg)">${char}</span>`).join("");
+    }
+}

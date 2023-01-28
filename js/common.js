@@ -48,6 +48,9 @@ $(window).load(function () {
 		center: true,
 		items: 2,
 		loop: true,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
 		responsive: {
 			600: {
 				items: 1
