@@ -46,8 +46,8 @@ $(window).load(function () {
 
 	$('.review-carousel').owlCarousel({
 		loop: true,
-		// margin:30,
-		stagePadding: 60,
+		margin:25,
+		// stagePadding: 0,
 		nav:true,
 		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
 		responsive:{

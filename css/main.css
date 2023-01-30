@@ -191,11 +191,22 @@ ul {
   color: #D03524;
 }
 
+.owl-prev, .owl-next {
+  top: 45%;
+  position: absolute;
+}
+
+.owl-prev {
+  left: -60px;
+}
+
+.owl-next {
+  right: -60px;
+}
+
 .review_card {
   border: 1px solid #ACA9A9;
   padding: 42px 33px 48px 22px;
-  max-width: 518px;
-  width: 100vh;
   max-height: 300px;
   height: 100vh;
 }
@@ -599,6 +610,9 @@ ul {
 }
 .wrapper .review_section {
   margin-top: 120px;
+}
+.wrapper .review_section .review-carousel .owl-dots {
+  display: none;
 }
 .wrapper .review_section .review-carousel .owl-nav {
   position: absolute;
