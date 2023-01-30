@@ -44,6 +44,24 @@ $(window).load(function () {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
+	$('.review-carousel').owlCarousel({
+		loop: true,
+		// margin:30,
+		stagePadding: 60,
+		nav:true,
+		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
+		responsive:{
+			0:{
+				items:1,
+			},
+			600:{
+				items:1,
+			},
+			1000:{
+				items:2,
+			}
+		}
+	})
 	$('.owl-carousel').owlCarousel({
 		center: true,
 		items: 2,
