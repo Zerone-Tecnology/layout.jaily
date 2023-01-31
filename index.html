@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
 
@@ -40,19 +42,19 @@
 	<div class="header">
 		<div class="container">
 			<div class="header_content">
-				<div class="logo">
+				<div class="logo" data-aos="fade-right">
 					<a href="/"><img src="img/logo.png" alt=""></a>
 				</div>
-				<nav class="nav">
+				<nav class="nav" data-aos="fade-down" data-aos-delay="200">
 					<ul>
-						<li><a href="#">Портфолио</a></li>
-						<li><a href="#">Наши услуги</a></li>
-						<li><a href="#">Оставить завяку</a></li>
-						<li><a href="#">Наша команда</a></li>
-						<li><a href="#">Отзывы</a></li>
+						<li data-aos="fade-down" data-aos-delay="100"><a data-scroll="s3">Портфолио</a></li>
+						<li data-aos="fade-down" data-aos-delay="200"><a data-scroll="s4">Наши услуги</a></li>
+						<li data-aos="fade-down" data-aos-delay="300"><a data-scroll="s5">Оставить завяку</a></li>
+						<li data-aos="fade-down" data-aos-delay="400"><a data-scroll="s6">Наша команда</a></li>
+						<li data-aos="fade-down" data-aos-delay="500"><a data-scroll="s7">Отзывы</a></li>
 					</ul>
 				</nav>
-				<div class="header_contact">
+				<div class="header_contact" data-aos="fade-left" data-aos-delay="600">
 					<a class="header_contact_btn" href="tel:+7 701 951 25 23">+7 701 951 25 23</a>
 				</div>
 			</div>
@@ -61,128 +63,71 @@
 	<div class="wrapper">
 		<section class="section_1">
 			<div class="container">
-				<div class="owl-carousel owl-theme">
-					<div class="item">
-						<img src="img/design_photo.png" alt="">
-						<div class="articles">
-							<h1>
-								Авторский дизайн <br>
-								интерьера под ключ<br>
-								за 2 недели
-							</h1>
-							<p>
-								Закажите обратный звонок и получите<br>
-								-20% скидки на планировку
-							</p>
-							<button class="default_btn">Заказать обратный звонок</button>
-						</div>
-						<div class="video_play_btn">
-							<div class="circle">
-								<button><img src="img/play.png" alt=""></button>
-								<div class="circle_text">
-									<p class="circle_p"> видео посмотреть видео посмотреть</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/design_photo.png" alt="">
-						<div class="articles">
-							<h1>
-								Авторский дизайн <br>
-								интерьера под ключ<br>
-								за 2 недели
-							</h1>
-							<p>
-								Закажите обратный звонок и получите<br>
-								-20% скидки на планировку
-							</p>
-							<button class="default_btn">Заказать обратный звонок</button>
-						</div>
-						<div class="video_play_btn">
-							<div class="circle">
-								<button><img src="img/play.png" alt=""></button>
-								<div class="circle_text">
-									<p class="circle_p"> видео посмотреть видео посмотреть</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/design_photo.png" alt="">
-						<div class="articles">
-							<h1>
-								Авторский дизайн <br>
-								интерьера под ключ<br>
-								за 2 недели
-							</h1>
-							<p>
-								Закажите обратный звонок и получите<br>
-								-20% скидки на планировку
-							</p>
-							<button class="default_btn">Заказать обратный звонок</button>
-						</div>
-						<div class="video_play_btn">
-							<div class="circle">
-								<button><img src="img/play.png" alt=""></button>
-								<div class="circle_text">
-									<p class="circle_p"> видео посмотреть видео посмотреть</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<img src="img/design_photo.png" alt="">
-						<div class="articles">
-							<h1>
-								Авторский дизайн <br>
-								интерьера под ключ<br>
-								за 2 недели
-							</h1>
-							<p>
-								Закажите обратный звонок и получите<br>
-								-20% скидки на планировку
-							</p>
-							<button class="default_btn">Заказать обратный звонок</button>
-						</div>
-						<div class="video_play_btn">
-							<div class="circle">
-								<button><img src="img/play.png" alt=""></button>
-								<div class="circle_text">
-									<p class="circle_p"> видео посмотреть видео посмотреть</p>
-								</div>
+				<div class="articles">
+					<h1 data-aos="fade-left" data-aos-delay="400">
+						Авторский дизайн <br>
+						интерьера под ключ<br>
+						за 2 недели
+					</h1>
+					<p data-aos="fade-left" data-aos-delay="600">
+						Закажите обратный звонок и получите<br>
+						-20% скидки на планировку
+					</p>
+					<button data-aos="fade-left" data-aos-delay="800" class="default_btn">Заказать обратный
+						звонок</button>
+					<div class="video_play_btn" data-aos="fade-left" data-aos-delay="800">
+						<div class="circle">
+							<button><img src="img/play.png" alt=""></button>
+							<div class="circle_text">
+								<p class="circle_p"> видео посмотреть видео посмотреть</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="img/design_photo.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/design_photo.png" alt="">
+					<div class="video_play_btn">
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/design_photo.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/design_photo.png" alt="">
+				</div>
+			</div>
 		</section>
 		<section class="section_2">
 			<div class="container">
-				<h2>Наши преимущества</h2>
+				<h2 data-aos="fade-up">Наши преимущества</h2>
 				<div class="advantages">
-					<div class="advantages_card">
+					<div class="advantages_card" data-aos="fade-up" data-aos-delay="100">
 						<div class="advantages_img">
 							<img src="img/advantages_1.png" alt="">
 						</div>
 						<h3>Сильная команда</h3>
 						<p>У нас сильная команда опытных профессоналов </p>
 					</div>
-					<div class="advantages_card">
+					<div class="advantages_card" data-aos="fade-up" data-aos-delay="200">
 						<div class="advantages_img">
 							<img src="img/advantages_2.png" alt="">
 						</div>
 						<h3>Пунктуальность</h3>
 						<p>Делаем вовремя, а при небольшой задержке снижаем цены за дизайн-проект</p>
 					</div>
-					<div class="advantages_card">
+					<div class="advantages_card" data-aos="fade-up" data-aos-delay="300">
 						<div class="advantages_img">
 							<img src="img/advantages_3.png" alt="">
 						</div>
 						<h3>Более 300</h3>
 						<p>Столько заказов по дизайну мы выполнили </p>
 					</div>
-					<div class="advantages_card">
+					<div class="advantages_card" data-aos="fade-up" data-aos-delay="400">
 						<div class="advantages_img">
 							<img src="img/advantages_4.png" alt="">
 						</div>
@@ -193,11 +138,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="section_3">
+		<section class="section_3" id="s3">
 			<div class="container">
 				<nav class="portfolio_nav">
-					<h2>Портфолио</h2>
-					<ul>
+					<h2 data-aos="fade-right" data-aos-delay="100">Портфолио</h2>
+					<ul data-aos="fade-left" data-aos-delay="200">
 						<li class="active"><a href="#">Все работы</a></li>
 						<li><a href="#">Жилищные помещения</a></li>
 						<li><a href="#">Коммерческие помещения</a></li>
@@ -205,22 +150,22 @@
 				</nav>
 				<div class="portfolio">
 					<div class="portfolio_img">
-						<img src="img/portfolio_1.png" alt="">
-						<img src="img/portfolio_2.png" alt="">
-						<img src="img/portfolio_3.png" alt="">
-						<img src="img/portfolio_4.png" alt="">
-						<img src="img/portfolio_5.png" alt="">
-						<img src="img/portfolio_6.png" alt="">
+						<img data-aos="fade-right" data-aos-delay="100" src="img/portfolio_1.png" alt="">
+						<img data-aos="fade-right" data-aos-delay="100" src="img/portfolio_2.png" alt="">
+						<img data-aos="fade-right" data-aos-delay="100" src="img/portfolio_3.png" alt="">
+						<img data-aos="fade-right" data-aos-delay="100" src="img/portfolio_4.png" alt="">
+						<img data-aos="fade-right" data-aos-delay="100" src="img/portfolio_5.png" alt="">
+						<img data-aos="fade-right" data-aos-delay="100" src="img/portfolio_6.png" alt="">
 					</div>
 				</div>
-				<button class="default_btn grey">Загрузить еще</button>
+				<button class="default_btn grey" data-aos="fade-up">Загрузить еще</button>
 			</div>
 		</section>
-		<section class="section_4">
+		<section class="section_4" id="s4">
 			<div class="container">
-				<h2>Услуги и цены</h2>
+				<h2 data-aos="fade-up">Услуги и цены</h2>
 				<div class="order_card_wrapper">
-					<div class="order_card">
+					<div class="order_card" data-aos="fade-left" data-aos-delay="100">
 						<h5>Пакет <br>“Дизайн проект” </h5>
 						<p>Создадим дизайн проект, по которому будут выполняться все ремонтно-отделочные работы.</p>
 						<ul class="order_card_list">
@@ -234,7 +179,7 @@
 						<p class="description">*Постоянным клиентам - скидка 10%</p>
 						<button class="default_btn red">Заказать дизайн</button>
 					</div>
-					<div class="order_card">
+					<div class="order_card" data-aos="fade-left" data-aos-delay="400">
 						<h5>Пакет <br>“Дизайн проект” </h5>
 						<p>Создадим дизайн проект, по которому будут выполняться все ремонтно-отделочные работы.</p>
 						<ul class="order_card_list">
@@ -248,7 +193,7 @@
 						<p class="description">*Постоянным клиентам - скидка 10%</p>
 						<button class="default_btn red">Заказать дизайн</button>
 					</div>
-					<div class="order_card">
+					<div class="order_card" data-aos="fade-left" data-aos-delay="600">
 						<h5>Пакет <br>“Дизайн проект” </h5>
 						<p>Создадим дизайн проект, по которому будут выполняться все ремонтно-отделочные работы.</p>
 						<ul class="order_card_list">
@@ -267,27 +212,27 @@
 		</section>
 		<section class="section_5">
 			<div class="container">
-				<h2>Этапы работы с клиентами</h2>
+				<h2 data-aos="fade-up">Этапы работы с клиентами</h2>
 				<div class="stages_of_work">
-					<div class="stages">
+					<div class="stages" data-aos="fade-left" data-aos-delay="100">
 						<h4>01</h4>
 						<h5>Знакомство</h5>
 						<p>На данном этапе мы заполняем - бриф, получаем от вас техническое задание и приступаем к
 							реализации планировочного решения</p>
 					</div>
-					<div class="stages">
+					<div class="stages" data-aos="fade-right" data-aos-delay="100">
 						<h4>02</h4>
 						<h5>Разработка дизайн-проекта</h5>
 						<p>Самая творческая часть работы, ведь сюда входит составление мудбордов, 3D визуализация и
 							создание чертежей</p>
 					</div>
-					<div class="stages">
+					<div class="stages" data-aos="fade-left" data-aos-delay="100">
 						<h4>03</h4>
 						<h5>Реализация</h5>
 						<p>Мы берем на себя подбор необходимых - материалов, контроль процесса строительства,
 							консультацию подрядчиков</p>
 					</div>
-					<div class="stages">
+					<div class="stages" data-aos="fade-right" data-aos-delay="100">
 						<h4>04</h4>
 						<h5>Сдача объекта</h5>
 						<p>Обсуждаем все оставшиеся вопросы, вносим необходимые корректировки и согласовываем результат
@@ -296,35 +241,35 @@
 				</div>
 			</div>
 		</section>
-		<section class="mailing">
+		<section class="mailing" id="s5">
 			<div class="container">
 				<div class="mailing_content">
-					<h5>Закажите обратный звонок и получите скидку -30% на планировку</h5>
-					<p>Наш оператор свяжется с вами для расчета стоимости</p>
+					<h5 data-aos="fade-up">Закажите обратный звонок и получите скидку -30% на планировку</h5>
+					<p data-aos="fade-up">Наш оператор свяжется с вами для расчета стоимости</p>
 					<form class="mailing_form">
 						<div class="form_inputs">
-							<input type="text" required placeholder="Имя">
-							<input type="tel" required placeholder="Номер телефона">
+							<input type="text" required placeholder="Имя" data-aos="fade-right" data-aos-delay="200">
+							<input type="tel" required placeholder="Номер телефона" data-aos="fade-left" data-aos-delay="400">
 						</div>
-						<button class="default_btn red" type="submit">Отправить</button>
+						<button class="default_btn red" type="submit" data-aos="fade-up">Отправить</button>
 					</form>
 				</div>
 			</div>
 		</section>
-		<section class="team_section">
+		<section class="team_section" id="s6">
 			<div class="container">
-				<h2>Наша команда</h2>
+				<h2 data-aos="fade-up">Наша команда</h2>
 			</div>
-			<img src="img/team_img.png" class="team_img" alt="">
+			<img data-aos="fade-up" src="img/team_img.png" class="team_img" alt="">
 			<div class="container">
-				<p>Мы — команда творческих профессионалов<br>
+				<p data-aos="fade-up">Мы — команда творческих профессионалов<br>
 					Наша миссия состоит в том, чтобы спроектировать и разработать лучший интерьер для Вас</p>
 			</div>
 		</section>
-		<section class="review_section">
+		<section class="review_section" id="s7">
 			<div class="container">
-				<h2>Отзывы наших клиентов</h2>
-				<div class="review-carousel owl-carousel owl-theme">
+				<h2 data-aos="fade-up">Отзывы наших клиентов</h2>
+				<div data-aos="fade-left" class="review-carousel owl-carousel owl-theme">
 					<div class="item">
 						<div class="review_card">
 							<div class="user">
@@ -404,41 +349,41 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer_top">
-				<div class="footer_logo">
+				<div class="footer_logo" data-aos="fade-right">
 					<img src="img/footer_logo.png" alt="">
 				</div>
 				<nav class="footer_nav">
 					<ul>
-						<li><a href="">Портфолио</a></li>
-						<li><a href="">Наши услуги</a></li>
-						<li><a href="">Оставить завяку </a></li>
-						<li><a href="">Наша команда</a></li>
+						<li data-aos="fade-up" data-aos-delay="100"><a data-scroll="s3">Портфолио</a></li>
+						<li data-aos="fade-up" data-aos-delay="200"><a data-scroll="s4">Наши услуги</a></li>
+						<li data-aos="fade-up" data-aos-delay="300"><a data-scroll="s5">Оставить завяку</a></li>
+						<li data-aos="fade-up" data-aos-delay="400"><a data-scroll="s6">Наша команда</a></li>
 					</ul>
 				</nav>
 				<div class="footer_contact">
-					<div class="footer_contact_number">
+					<div class="footer_contact_number" data-aos="fade-up" data-aos-delay="200">
 						<p>Телефон</p>
 						<a href="tel:+7 701 951 25 23">+7 701 951 25 23</a>
 					</div>
-					<div class="schedule">
+					<div class="schedule" data-aos="fade-up" data-aos-delay="300">
 						<p>График работы</p>
 						<a>10:00 - 20:00 (ежедневно)</a>
 					</div>
 				</div>
 				<div class="footer_network">
-					<div class="footer_email">
+					<div class="footer_email" data-aos="fade-up" data-aos-delay="400">
 						<p>Электронный адрес</p>
 						<a href="mailto:jailyinteriors@gmail.com">jailyinteriors@gmail.com</a>
 					</div>
-					<div class="footer_network_link">
-						<a href=""><img src="img/instagram_icon.png" alt=""></a>
-						<a href=""><img src="img/tiktok_icon.png" alt=""></a>
-						<a href=""><img src="img/youtube_icon.png" alt=""></a>
-						<a href=""><img src="img/telegram_icon.png" alt=""></a>
+					<div class="footer_network_link" data-aos="fade-up" data-aos-delay="500">
+						<a href=""><img id="instagram" src="img/instagram_icon.png" alt=""></a>
+						<a href=""><img id="tiktok" src="img/tiktok_icon.png" alt=""></a>
+						<a href=""><img id="youtube" src="img/youtube_icon.png" alt=""></a>
+						<a href=""><img id="telegram" src="img/telegram_icon.png" alt=""></a>
 					</div>
 				</div>
 			</div>
-			<div class="footer_bottom">
+			<div class="footer_bottom" >
 				<p>ТОО JAILY. Все права защищены, 2018-2022</p>
 			</div>
 		</div>
@@ -466,6 +411,9 @@
 
 	<script src="js/common.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 
 </body>
 
