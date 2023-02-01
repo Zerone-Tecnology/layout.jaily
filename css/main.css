@@ -425,6 +425,10 @@ ul {
 @media only screen and (max-width: 1024px) {
   .wrapper .section_1 .container .articles {
     width: auto;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .wrapper .section_1 .container .articles p {
@@ -565,6 +569,12 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1024px) {
+  .wrapper .section_2 .advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .wrapper .section_2 .advantages .advantages_card {
   display: flex;
   flex-direction: column;
@@ -614,8 +624,25 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 1024px) {
+  .wrapper .section_3 .portfolio .portfolio_img {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .wrapper .section_3 .portfolio .portfolio_img img {
   width: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper .section_3 .portfolio .portfolio_img img {
+    width: 100%;
+  }
+  .wrapper .section_3 .portfolio .portfolio_img img:nth-child(odd) {
+    padding: 0;
+  }
+  .wrapper .section_3 .portfolio .portfolio_img img:nth-child(even) {
+    padding: 0;
+  }
 }
 .wrapper .section_3 .portfolio .portfolio_img img:nth-child(odd) {
   padding: 2px 2px 2px 0;
@@ -634,6 +661,12 @@ ul {
 .wrapper .section_4 .order_card_wrapper {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper .section_4 .order_card_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .wrapper .section_4 .order_card_wrapper .order_card {
   background: #F5F5F5;
@@ -689,6 +722,11 @@ ul {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #ACA9A9;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper .section_5 .stages_of_work .stages {
+    flex-wrap: wrap;
+  }
 }
 .wrapper .section_5 .stages_of_work .stages h5 {
   font-size: 32px;
