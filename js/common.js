@@ -49,16 +49,14 @@ $(window).load(function () {
 		margin: 25,
 		// stagePadding: 0,
 		nav: true,
+		responsiveClass:true,
 		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
 		responsive: {
 			0: {
-				items: 1,
+				items: 1
 			},
-			600: {
-				items: 1,
-			},
-			1000: {
-				items: 2,
+			1440: {
+				items: 2
 			}
 		}
 	})
@@ -80,11 +78,18 @@ $(window).load(function () {
 			// offset: (jQuery(window).height() * .25),
 			startEvent: 'DOMContentLoaded',
 			duration: 1000,
-			easing: 'ease',
-			// anchorPlacement: 'bottom-center'
+			// easing: 'ease',
+			// once: true,
+			// disable: true
 		});
 	}, 600);
 	$('.nav li a').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $('#' + $(this).data('scroll')).offset().top,
+		}, 800)
+	});
+	$('.footer_nav li a').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
 			scrollTop: $('#' + $(this).data('scroll')).offset().top,

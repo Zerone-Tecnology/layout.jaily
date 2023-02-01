@@ -39,14 +39,22 @@
 </head>
 
 <body>
-	<div class="header">
+	<div class="mobile_nav" id="mobile_nav"></div>
+	<header class="header">
 		<div class="container">
 			<div class="header_content">
 				<div class="logo" data-aos="fade-right">
 					<a href="/"><img src="img/logo.png" alt=""></a>
 				</div>
 				<nav class="nav" data-aos="fade-down" data-aos-delay="200">
-					<ul>
+					<div class="mobile_menu">
+						<div class="burger_menu" id="burger_menu">
+							<span></span>
+						</div>
+						<div class="menu_close_btn" id="menu_close_btn"><button><img loading="lazy"
+									src="img/close_modal.png" alt=""></button></div>
+					</div>
+					<ul id="menu">
 						<li data-aos="fade-down" data-aos-delay="100"><a data-scroll="s3">Портфолио</a></li>
 						<li data-aos="fade-down" data-aos-delay="200"><a data-scroll="s4">Наши услуги</a></li>
 						<li data-aos="fade-down" data-aos-delay="300"><a data-scroll="s5">Оставить завяку</a></li>
@@ -59,7 +67,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 	<div class="wrapper">
 		<section class="section_1">
 			<div class="container">
@@ -251,7 +259,8 @@
 					<form class="mailing_form">
 						<div class="form_inputs">
 							<input type="text" required placeholder="Имя" data-aos="fade-right" data-aos-delay="200">
-							<input type="tel" required placeholder="Номер телефона" data-aos="fade-left" data-aos-delay="400">
+							<input type="tel" required placeholder="Номер телефона" data-aos="fade-left"
+								data-aos-delay="400">
 						</div>
 						<button class="default_btn red" type="submit" data-aos="fade-up">Отправить</button>
 					</form>
@@ -271,8 +280,8 @@
 		<section class="review_section" id="s7">
 			<div class="container">
 				<h2 data-aos="fade-up">Отзывы наших клиентов</h2>
-				<div data-aos="fade-left" class="review-carousel owl-carousel owl-theme">
-					<div class="item">
+				<div class="review-carousel owl-carousel owl-theme">
+					<div class="item" data-aos="fade-right">
 						<div class="review_card">
 							<div class="user">
 								<div class="user_img">
@@ -290,7 +299,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item" data-aos="fade-left" data-aos-delay="150">
 						<div class="review_card">
 							<div class="user">
 								<div class="user_img">
@@ -385,7 +394,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer_bottom" >
+			<div class="footer_bottom">
 				<p>ТОО JAILY. Все права защищены, 2018-2022</p>
 			</div>
 		</div>
