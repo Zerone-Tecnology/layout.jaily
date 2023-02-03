@@ -60,29 +60,20 @@ $(window).load(function () {
 			}
 		}
 	})
+	if ($(window).width() < 321) {
+		$('.review-carousel').owlCarousel({
+			stagePadding: 10,
+		})
+	 }
 	$('.owl-carousel').owlCarousel({
 		center: true,
-		items: 2,
+		items: 1,
 		loop: true,
-		autoplay: true,
+		// autoplay: true,
 		autoplayTimeout: 5000,
-		autoplayHoverPause: true,
-		responsive: {
-			600: {
-				items: 1
-			}
-		}
+		autoplayHoverPause: true
 	})
-	setTimeout(() => {
-		AOS.init({
-			// offset: (jQuery(window).height() * .25),
-			startEvent: 'DOMContentLoaded',
-			duration: 1000,
-			// easing: 'ease',
-			// once: true,
-			// disable: true
-		});
-	}, 600);
+	
 	$('.nav li a').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({

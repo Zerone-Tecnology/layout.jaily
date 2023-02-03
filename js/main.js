@@ -17,6 +17,12 @@ window.onload = function () {
         menu.style.display = "none";
         mobile_nav.style.display = "none";
     }
+    
+    let show_more_card = document.getElementById("show_more");
+    let show_more_card_btn = document.getElementById("show_more_btn");
+    show_more_card_btn.onclick = function(){
+        show_more_card.classList.add("active");
+    }
     // if(window.width == 1024){
     //     document.getElementById("header_menu").style.display = 'none';
     // }z
