@@ -853,9 +853,16 @@ ul {
     }
 
     .portfolio {
+      overflow: hidden;
       .portfolio_carousel {
-        width: 48%;
-        margin: 10px;
+        overflow: hidden;
+
+        width: 49%;
+        margin: 5px;
+        @include respond-to(_1024){
+          width: 100%;
+          margin: 5px 0;
+        }
         .owl-dot {
           display: none;
         }
@@ -874,6 +881,7 @@ ul {
       .portfolio_img {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         @include respond-to(_1024) {
           flex-direction: column;
