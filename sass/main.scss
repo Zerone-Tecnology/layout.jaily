@@ -547,7 +547,8 @@ ul {
       @include respond-to(_425) {
         left: 30%;
       }
-      @include respond-to(_320){
+
+      @include respond-to(_320) {
         left: 20%;
       }
 
@@ -578,9 +579,8 @@ ul {
 
 .wrapper {
   .section_1 {
-    position: relative;
-
     .container {
+      position: relative;
 
       .articles {
         position: absolute;
@@ -853,6 +853,24 @@ ul {
     }
 
     .portfolio {
+      .portfolio_carousel {
+        width: 48%;
+        margin: 10px;
+        .owl-dot {
+          display: none;
+        }
+
+        .owl-nav {
+          position: absolute;
+          top: 45%;
+          z-index: 9;
+          width: -webkit-fill-available;
+          display: flex;
+          justify-content: space-between;
+
+        }
+      }
+
       .portfolio_img {
         display: flex;
         flex-wrap: wrap;
@@ -862,29 +880,29 @@ ul {
           align-items: center;
         }
 
-        img {
-          width: 50%;
+        // img {
+        //   width: 50%;
 
-          @include respond-to(_1024) {
-            width: 100%;
-          }
+        //   @include respond-to(_1024) {
+        //     width: 100%;
+        //   }
 
-          &:nth-child(odd) {
-            padding: 2px 2px 2px 0;
+        //   &:nth-child(odd) {
+        //     padding: 2px 2px 2px 0;
 
-            @include respond-to(_1024) {
-              padding: 5px 0;
-            }
-          }
+        //     @include respond-to(_1024) {
+        //       padding: 5px 0;
+        //     }
+        //   }
 
-          &:nth-child(even) {
-            padding: 2px 0 2px 2px;
+        //   &:nth-child(even) {
+        //     padding: 2px 0 2px 2px;
 
-            @include respond-to(_1024) {
-              padding: 5px 0;
-            }
-          }
-        }
+        //     @include respond-to(_1024) {
+        //       padding: 5px 0;
+        //     }
+        //   }
+        // }
       }
     }
 
@@ -983,7 +1001,8 @@ ul {
           flex-wrap: wrap;
           justify-content: center;
         }
-        @include respond-to(_425){
+
+        @include respond-to(_425) {
           justify-content: flex-start;
 
         }
@@ -1000,7 +1019,8 @@ ul {
             width: -webkit-fill-available;
             margin-left: 44px;
           }
-          @include respond-to(_425){
+
+          @include respond-to(_425) {
             max-width: 217px;
             width: auto;
           }
@@ -1180,7 +1200,8 @@ ul {
             right: 0px;
           }
         }
-        @include respond-to(_320){
+
+        @include respond-to(_320) {
           .owl-prev {
             display: none;
           }

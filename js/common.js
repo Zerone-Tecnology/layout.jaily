@@ -60,6 +60,15 @@ $(window).load(function () {
 			}
 		}
 	})
+	$('.portfolio_carousel').owlCarousel({
+		loop: true,
+		margin: 25,
+		// stagePadding: 0,
+		nav: true,
+		responsiveClass:true,
+		navText: ["<img src='img/portfolio_left.png'>", "<img src='img/portfolio_right.png'>"],
+		items:1
+	})
 	if ($(window).width() < 321) {
 		$('.review-carousel').owlCarousel({
 			stagePadding: 10,
@@ -73,7 +82,6 @@ $(window).load(function () {
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true
 	})
-	
 	$('.nav li a').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
