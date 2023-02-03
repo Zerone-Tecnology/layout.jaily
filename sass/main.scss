@@ -201,7 +201,6 @@ button {
   opacity: 0;
   max-height: 0;
   transition: 0.5s ease;
-  width: min-content;
 }
 
 .show_more.active {
@@ -854,15 +853,19 @@ ul {
 
     .portfolio {
       overflow: hidden;
+
       .portfolio_carousel {
         overflow: hidden;
+        position: relative;
 
         width: 49%;
         margin: 5px;
-        @include respond-to(_1024){
+
+        @include respond-to(_1024) {
           width: 100%;
           margin: 5px 0;
         }
+
         .owl-dot {
           display: none;
         }
@@ -874,8 +877,61 @@ ul {
           width: -webkit-fill-available;
           display: flex;
           justify-content: space-between;
-
         }
+
+        .portfolio_carousel_articles {
+          transition: all .3s ease;
+
+          h5 {
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease;
+            position: absolute;
+            bottom: 0;
+            left: 32px;
+            z-index: 99;
+            max-width: 380px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            color: #F5F5F5;
+          }
+        }
+        .item{
+          transition: all .3s ease;
+        }
+        &:hover {
+          .portfolio_carousel_articles {
+            transition: all .3s ease;
+
+            h5 {
+              transition: all .3s ease;
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          .item {
+            transition: all .3s ease;
+            &::before {
+              transition: all .3s ease;
+              background: rgba(0, 0, 0, 0.52);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+            }
+          }
+        }
+
+
+
       }
 
       .portfolio_img {

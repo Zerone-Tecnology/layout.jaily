@@ -60,13 +60,13 @@ $(window).load(function () {
 			}
 		}
 	})
-	$('.portfolio_carousel').owlCarousel({
+	$('.portfolio_carousel .owl-carousel').owlCarousel({
 		loop: true,
 		margin: 25,
 		// stagePadding: 0,
 		nav: true,
 		responsiveClass:true,
-		navText: ["<img src='img/portfolio_left.png'>", "<img src='img/portfolio_right.png'>"],
+		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
 		items:1
 	})
 	if ($(window).width() < 321) {
