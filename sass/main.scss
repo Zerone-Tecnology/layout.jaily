@@ -897,11 +897,19 @@ ul {
             font-size: 36px;
             line-height: 40px;
             color: #F5F5F5;
+
+            @include respond-to(_425) {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 24px;
+            }
           }
         }
-        .item{
+
+        .item {
           transition: all .3s ease;
         }
+
         &:hover {
           .portfolio_carousel_articles {
             transition: all .3s ease;
@@ -915,6 +923,7 @@ ul {
 
           .item {
             transition: all .3s ease;
+
             &::before {
               transition: all .3s ease;
               background: rgba(0, 0, 0, 0.52);
