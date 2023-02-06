@@ -20,7 +20,25 @@ window.onload = function () {
 
     let show_more_card = document.getElementById("show_more");
     let show_more_card_btn = document.getElementById("show_more_btn");
-    show_more_card_btn.onclick = function(){
+    show_more_card_btn.onclick = function () {
         show_more_card.classList.remove("show_more");
+    }
+    var containerEl = document.querySelector('.portfolio_img');
+    var containerEl2 = document.querySelector('.portfolio_img.show_more');
+
+
+    var mixer = mixitup(containerEl);
+    var mixer = mixitup(containerEl2);
+
+
+
+    let portfolio_nav = document.querySelectorAll(".portfolio_nav ul li");
+    for (var i = 0; i < portfolio_nav.length; i++) {
+        portfolio_nav[i].onclick = function(){
+            for (var i = 0; i < portfolio_nav.length; i++) {
+                portfolio_nav[i].classList.remove("active")
+            }
+            this.classList.add("active");
+        }
     }
 }

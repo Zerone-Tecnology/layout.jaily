@@ -634,7 +634,7 @@ ul {
             align-items: center;
           }
 
-          button {
+          a {
             position: absolute;
             width: 75px;
             height: 75px;
@@ -815,7 +815,10 @@ ul {
 
       ul {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 0;
+        width: 100%;
 
         @include respond-to(_425) {
           flex-direction: column;
@@ -824,6 +827,9 @@ ul {
 
         li {
           padding: 0 14px;
+          width: calc(100% / 3);
+          display: flex;
+          justify-content: center;
 
           @include respond-to(_425) {
             margin: 8px 0;
@@ -1429,6 +1435,8 @@ ul {
   }
 
   .footer_bottom {
+    display: flex;
+    justify-content: space-between;
     p {
       font-weight: 500;
       font-size: 14px;
@@ -1547,7 +1555,6 @@ ul {
 
               @include respond-to(_1024) {
                 margin-right: 0px;
-
               }
             }
           }
