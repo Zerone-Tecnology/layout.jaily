@@ -49,7 +49,7 @@ $(window).load(function () {
 		margin: 25,
 		// stagePadding: 0,
 		nav: true,
-		responsiveClass:true,
+		responsiveClass: true,
 		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
 		responsive: {
 			0: {
@@ -65,20 +65,20 @@ $(window).load(function () {
 		margin: 25,
 		// stagePadding: 0,
 		nav: true,
-		responsiveClass:true,
+		responsiveClass: true,
 		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
-		items:1
+		items: 1
 	})
 	if ($(window).width() < 321) {
 		$('.review-carousel').owlCarousel({
 			stagePadding: 10,
 		})
-	 }
+	}
 	$('.owl-carousel').owlCarousel({
 		center: true,
 		items: 1,
 		loop: true,
-		// autoplay: true,
+		autoplay: true,
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true
 	})
@@ -93,5 +93,13 @@ $(window).load(function () {
 		$('html, body').animate({
 			scrollTop: $('#' + $(this).data('scroll')).offset().top,
 		}, 800)
+	});
+
+	//open popup
+	$('#open_modal_btn').on('click', function () {
+		$('.call_back_modal_wrapper').css("display", "block");
+	});
+	$(".close_modal_btn").on("click", function(){
+		$(".call_back_modal_wrapper").css("display", "none");
 	});
 });

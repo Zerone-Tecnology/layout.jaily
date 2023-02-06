@@ -23,7 +23,4 @@ window.onload = function () {
     show_more_card_btn.onclick = function(){
         show_more_card.classList.remove("show_more");
     }
-    // if(window.width == 1024){
-    //     document.getElementById("header_menu").style.display = 'none';
-    // }z
 }

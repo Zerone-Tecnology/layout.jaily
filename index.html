@@ -77,7 +77,7 @@
 						Закажите обратный звонок и получите<br>
 						-20% скидки на планировку
 					</p>
-					<button class="default_btn">Заказать обратный
+					<button class="default_btn" id="open_modal_btn">Заказать обратный
 						звонок</button>
 					<div class="video_play_btn">
 						<div class="circle">
@@ -506,16 +506,40 @@
 				</div>
 			</div>
 			<div class="footer_bottom">
-				<p>ТОО JAILY. Все права защищены, 2018-2022</p>
+				<p>ТОО JAILY. Все права защищены, 2018-2023</p>
 			</div>
 		</div>
 	</footer>
+
+	<div class="call_back_modal_wrapper">
+		<div class="container">
+			<div class="call_back_modal">
+				<div class="close_modal_btn">
+					<img src="img/close_modal.png" alt="">
+				</div>
+				<div class="mailing_content">
+					<h5>Закажите обратный звонок и получите скидку -30% на планировку</h5>
+					<p>Наш оператор свяжется с вами для расчета стоимости</p>
+					<form class="mailing_form">
+						<div class="form_inputs">
+							<input type="text" required placeholder="Имя">
+							<input type="tel" required placeholder="Номер телефона">
+						</div>
+						<button class="default_btn red" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<div class="hidden"></div>
 
 	<div class="loader">
 		<div class="loader_inner"></div>
 	</div>
+
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
