@@ -754,6 +754,9 @@ ul {
     margin: 5px 0;
   }
 }
+.wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel {
+  max-height: 590px;
+}
 .wrapper .section_3 .portfolio .portfolio_carousel .owl-dot {
   display: none;
 }
