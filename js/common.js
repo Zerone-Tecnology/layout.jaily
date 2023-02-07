@@ -94,12 +94,4 @@ $(window).load(function () {
 			scrollTop: $('#' + $(this).data('scroll')).offset().top,
 		}, 800)
 	});
-
-	//open popup
-	$('#open_modal_btn').on('click', function () {
-		$('.call_back_modal_wrapper').css("display", "block");
-	});
-	$(".close_modal_btn").on("click", function () {
-		$(".call_back_modal_wrapper").css("display", "none");
-	});
 });

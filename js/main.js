@@ -24,6 +24,7 @@ window.onload = function () {
     show_more_card_btn.onclick = function () {
         show_more_card.classList.remove("show_more");
     }
+
     var containerEl = document.querySelector('.portfolio_img');
     var containerEl2 = document.querySelector('.portfolio_img.show_more');
 
@@ -54,4 +55,19 @@ window.onload = function () {
         mask: '+{7}(000)000-00-00'
     });
 
+
+
+    let open_modal = document.querySelector(".call_back_modal_wrapper");
+    var open_modalbtn = document.querySelectorAll("#open_modal_btn");
+    var close_modalbtn = document.querySelectorAll(".close_modal_btn");
+    for (var i = 0; i < open_modalbtn.length; i++) {
+        open_modalbtn[i].onclick = function(){
+            open_modal.style.display = ("block");
+        }
+    }
+    for (var i = 0; i < close_modalbtn.length; i++) {
+        close_modalbtn[i].onclick = function(){
+            open_modal.style.display = ("none");
+        }
+    }
 }
