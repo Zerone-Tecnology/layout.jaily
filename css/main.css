@@ -38,16 +38,6 @@ body {
   overflow-x: hidden;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red;
-}
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green;
-}
-
 .hidden {
   display: none;
 }
@@ -270,7 +260,7 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #ACA9A9;
+  color: #2C2C2C;
 }
 input:focus {
   border-bottom: 1px solid #2E6AF2;
@@ -729,6 +719,7 @@ ul {
 @media only screen and (max-width: 425px) {
   .wrapper .section_3 .portfolio_nav ul li {
     margin: 8px 0;
+    width: 100%;
   }
 }
 .wrapper .section_3 .portfolio_nav ul li a {
@@ -865,6 +856,10 @@ ul {
     margin: 20px 0;
   }
 }
+.wrapper .section_4 .order_card_wrapper .order_card .price_articles {
+  max-height: 120px;
+  height: 100%;
+}
 .wrapper .section_4 .order_card_wrapper .order_card h5 {
   text-align: center;
 }
@@ -875,6 +870,8 @@ ul {
 }
 .wrapper .section_4 .order_card_wrapper .order_card .order_card_list {
   padding-left: 15px;
+  max-height: 240px;
+  height: 100%;
 }
 .wrapper .section_4 .order_card_wrapper .order_card .order_card_list li {
   color: #2C2C2C;
@@ -926,12 +923,17 @@ ul {
     justify-content: flex-start;
   }
 }
-.wrapper .section_5 .stages_of_work .stages h5 {
+.wrapper .section_5 .stages_of_work .stages .stages_left {
+  display: flex;
+  align-items: center;
+}
+.wrapper .section_5 .stages_of_work .stages .stages_left h5 {
   font-size: 32px;
   line-height: 39px;
+  margin-left: 60px;
 }
 @media only screen and (max-width: 1024px) {
-  .wrapper .section_5 .stages_of_work .stages h5 {
+  .wrapper .section_5 .stages_of_work .stages .stages_left h5 {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -941,7 +943,7 @@ ul {
   }
 }
 @media only screen and (max-width: 425px) {
-  .wrapper .section_5 .stages_of_work .stages h5 {
+  .wrapper .section_5 .stages_of_work .stages .stages_left h5 {
     max-width: 217px;
     width: auto;
   }
@@ -1018,6 +1020,8 @@ ul {
 }
 .wrapper .mailing .mailing_content .mailing_form .form_inputs input {
   width: 50%;
+  outline: none;
+  color: #2C2C2C;
 }
 @media only screen and (max-width: 1024px) {
   .wrapper .mailing .mailing_content .mailing_form .form_inputs input {
@@ -1230,7 +1234,16 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 768px) {
+  .footer .footer_bottom {
+    flex-direction: column;
+  }
+}
 .footer .footer_bottom p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #BAB6B6;
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
@@ -1238,6 +1251,13 @@ ul {
 }
 @media only screen and (max-width: 425px) {
   .footer .footer_bottom p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer .footer_bottom p a {
     font-weight: 500;
     font-size: 11px;
     line-height: 13px;

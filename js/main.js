@@ -1,4 +1,5 @@
 window.onload = function () {
+
     var text = document.querySelectorAll(".circle_p");
     for (var i = 0; i < text.length; i++) {
         text[i].innerHTML = text[i].innerHTML.split("").map((char, i) => `<span style="transform:rotate(${i * 10.5}deg)">${char}</span>`).join("");
@@ -34,11 +35,23 @@ window.onload = function () {
 
     let portfolio_nav = document.querySelectorAll(".portfolio_nav ul li");
     for (var i = 0; i < portfolio_nav.length; i++) {
-        portfolio_nav[i].onclick = function(){
+        portfolio_nav[i].onclick = function () {
             for (var i = 0; i < portfolio_nav.length; i++) {
                 portfolio_nav[i].classList.remove("active")
             }
             this.classList.add("active");
         }
     }
+
+    // var phoneMask = IMask(document.getElementById('imask_phone'), {mask: '+{7}(000)000-00-00'});
+
+    var phoneMask = IMask(
+        document.getElementById('imask_phone'), {
+        mask: '+{7}(000)000-00-00'
+    });
+    var phoneMaskModal = IMask(
+        document.getElementById('modal_imask_phone'), {
+        mask: '+{7}(000)000-00-00'
+    });
+
 }

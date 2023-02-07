@@ -90,16 +90,6 @@ body {
   overflow-x: hidden;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red;
-}
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green;
-}
-
 .hidden {
   display: none;
 }
@@ -335,7 +325,8 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #ACA9A9;
+  color: #2C2C2C;
+
 
   &:focus {
     border-bottom: 1px solid #2E6AF2;
@@ -833,6 +824,7 @@ ul {
 
           @include respond-to(_425) {
             margin: 8px 0;
+            width: 100%;
           }
 
           a {
@@ -1015,6 +1007,11 @@ ul {
           margin: 20px 0;
         }
 
+        .price_articles {
+          max-height: 120px;
+          height: 100%;
+        }
+
         h5 {
           text-align: center;
         }
@@ -1027,6 +1024,8 @@ ul {
 
         .order_card_list {
           padding-left: 15px;
+          max-height: 240px;
+          height: 100%;
 
           li {
             color: #2C2C2C;
@@ -1087,24 +1086,29 @@ ul {
           justify-content: flex-start;
 
         }
-
-        h5 {
-          font-size: 32px;
-          line-height: 39px;
-
-          @include respond-to(_1024) {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 29px;
-            max-width: 400px;
-            width: -webkit-fill-available;
-            margin-left: 44px;
+        .stages_left{
+          display: flex;
+          align-items: center;
+          h5 {
+            font-size: 32px;
+            line-height: 39px;
+            margin-left: 60px;
+  
+            @include respond-to(_1024) {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+              max-width: 400px;
+              width: -webkit-fill-available;
+              margin-left: 44px;
+            }
+  
+            @include respond-to(_425) {
+              max-width: 217px;
+              width: auto;
+            }
           }
-
-          @include respond-to(_425) {
-            max-width: 217px;
-            width: auto;
-          }
+          
         }
 
         p {
@@ -1184,6 +1188,8 @@ ul {
 
           input {
             width: 50%;
+            outline: none;
+            color: #2C2C2C;
 
             @include respond-to(_1024) {
               width: 80%;
@@ -1437,6 +1443,11 @@ ul {
   .footer_bottom {
     display: flex;
     justify-content: space-between;
+
+    @include respond-to(_768) {
+      flex-direction: column;
+    }
+
     p {
       font-weight: 500;
       font-size: 14px;
@@ -1448,6 +1459,19 @@ ul {
         font-size: 11px;
         line-height: 13px;
 
+      }
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #BAB6B6;
+
+      a {
+        @include respond-to(_425) {
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 13px;
+        }
       }
     }
   }
