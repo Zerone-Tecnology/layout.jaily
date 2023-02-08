@@ -855,9 +855,7 @@ ul {
       overflow: hidden;
 
       .portfolio_carousel {
-        overflow: hidden;
         position: relative;
-
         width: 49%;
         margin: 5px;
 
@@ -866,21 +864,15 @@ ul {
           margin: 5px 0;
         }
         .owl-carousel{
-          max-height: 590px;
           .item{
             overflow: hidden;
             display: flex;
             align-items: center;
+            flex-direction: column;
+            background-color: #1C1C1C;
             img{
-              overflow: hidden;
-              height: 100vh;
               max-height: 590px;
-              @include respond-to(_768){
-                max-height: 500px;
-              }
-              @include respond-to(_425){
-                max-height: 258px;
-              }
+              width: auto;
             }
           }
         }
@@ -1034,6 +1026,8 @@ ul {
 
         h5 {
           text-align: center;
+          margin: 0;
+          margin-bottom: 24px;
         }
 
         p {
@@ -1603,6 +1597,15 @@ ul {
             }
           }
         }
+      }
+    }
+    .call_back_success{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      .close_modal_btn{
+        float: none;
+
       }
     }
   }

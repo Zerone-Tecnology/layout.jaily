@@ -16,7 +16,8 @@ $(function () {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function () {
-			alert("Thank you!");
+			$(".call_back_success").css("display", "flex");
+			$(".mailing_content").css("display", "none");
 			setTimeout(function () {
 				// Done Functions
 				th.trigger("reset");
@@ -47,7 +48,6 @@ $(window).load(function () {
 	$('.review-carousel').owlCarousel({
 		loop: true,
 		margin: 25,
-		// stagePadding: 0,
 		nav: true,
 		responsiveClass: true,
 		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
@@ -94,4 +94,5 @@ $(window).load(function () {
 			scrollTop: $('#' + $(this).data('scroll')).offset().top,
 		}, 800)
 	});
+	$('.lazyload_for_div').lazyload(options);
 });

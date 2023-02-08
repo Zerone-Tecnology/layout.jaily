@@ -551,26 +551,16 @@ ul {
 }
 .wrapper .section_1 .container .articles .video_play_btn .circle_text {
   position: absolute;
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   height: 190px;
-  -webkit-animation: rotateText 10s linear infinite;
-          animation: rotateText 10s linear infinite;
+  animation: rotateText 10s linear infinite;
 }
 .wrapper .section_1 .container .articles .video_play_btn .circle_text .circle_p {
   color: #F5F5F5;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-}
-@-webkit-keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 @keyframes rotateText {
   0% {
@@ -743,7 +733,6 @@ ul {
   overflow: hidden;
 }
 .wrapper .section_3 .portfolio .portfolio_carousel {
-  overflow: hidden;
   position: relative;
   width: 49%;
   margin: 5px;
@@ -754,28 +743,16 @@ ul {
     margin: 5px 0;
   }
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel {
-  max-height: 590px;
-}
 .wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel .item {
   overflow: hidden;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  background-color: #1C1C1C;
 }
 .wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel .item img {
-  overflow: hidden;
-  height: 100vh;
   max-height: 590px;
-}
-@media only screen and (max-width: 768px) {
-  .wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel .item img {
-    max-height: 500px;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel .item img {
-    max-height: 258px;
-  }
+  width: auto;
 }
 .wrapper .section_3 .portfolio .portfolio_carousel .owl-dot {
   display: none;
@@ -886,6 +863,8 @@ ul {
 }
 .wrapper .section_4 .order_card_wrapper .order_card h5 {
   text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
 }
 .wrapper .section_4 .order_card_wrapper .order_card p {
   font-weight: 500;
@@ -1118,7 +1097,7 @@ ul {
 }
 @media only screen and (max-width: 1024px) {
   .wrapper .review_section .review-carousel .owl-nav .owl-prev,
-.wrapper .review_section .review-carousel .owl-nav .owl-next {
+  .wrapper .review_section .review-carousel .owl-nav .owl-next {
     position: relative;
   }
   .wrapper .review_section .review-carousel .owl-nav .owl-prev {
@@ -1392,4 +1371,12 @@ ul {
   .call_back_modal_wrapper .call_back_modal .mailing_content .mailing_form .form_inputs input:first-child {
     margin-right: 0px;
   }
+}
+.call_back_modal_wrapper .call_back_modal .call_back_success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.call_back_modal_wrapper .call_back_modal .call_back_success .close_modal_btn {
+  float: none;
 }/*# sourceMappingURL=main.css.map */
