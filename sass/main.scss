@@ -867,6 +867,22 @@ ul {
         }
         .owl-carousel{
           max-height: 590px;
+          .item{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            img{
+              overflow: hidden;
+              height: 100vh;
+              max-height: 590px;
+              @include respond-to(_768){
+                max-height: 500px;
+              }
+              @include respond-to(_425){
+                max-height: 258px;
+              }
+            }
+          }
         }
 
         .owl-dot {
@@ -905,6 +921,7 @@ ul {
               font-weight: 600;
               font-size: 20px;
               line-height: 24px;
+              left: 2px;
             }
           }
         }
