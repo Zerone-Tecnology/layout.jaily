@@ -454,6 +454,7 @@ ul {
 
   .review {
     position: relative;
+    transition: all .3s ease;
 
     .review_show_more {
       min-height: 88px;
@@ -464,7 +465,7 @@ ul {
       color: #2C2C2C;
       display: block;
       overflow: hidden;
-
+      transition: all .3s ease;
 
       @include respond-to(_425) {
         font-weight: 500;
@@ -474,14 +475,14 @@ ul {
 
       &.remove_show_more {
         &::after {
-          content: 'Скрыть';
+          content: 'Свернуть';
           width: auto;
           height: auto;
           position: absolute;
           left: 0;
           z-index: 99;
           top: 100%;
-          color: #1C1C1C;
+          color: #2E6AF2;
           cursor: pointer;
         }
       }
@@ -490,16 +491,17 @@ ul {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
+        transition: all .3s ease;
 
         &::after {
-          content: 'Подробнее';
+          content: 'Чиатать далее';
           width: auto;
           height: auto;
           position: absolute;
           left: 0;
           z-index: 99;
           top: 100%;
-          color: #1C1C1C;
+          color: #2E6AF2;
           cursor: pointer;
         }
       }

@@ -379,6 +379,7 @@ ul {
 }
 .review_card .review {
   position: relative;
+  transition: all 0.3s ease;
 }
 .review_card .review .review_show_more {
   min-height: 88px;
@@ -389,6 +390,7 @@ ul {
   color: #2C2C2C;
   display: block;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 @media only screen and (max-width: 425px) {
   .review_card .review .review_show_more {
@@ -398,30 +400,31 @@ ul {
   }
 }
 .review_card .review .review_show_more.remove_show_more::after {
-  content: "Скрыть";
+  content: "Свернуть";
   width: auto;
   height: auto;
   position: absolute;
   left: 0;
   z-index: 99;
   top: 100%;
-  color: #1C1C1C;
+  color: #2E6AF2;
   cursor: pointer;
 }
 .review_card .review .review_show_more.line_clamp {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  transition: all 0.3s ease;
 }
 .review_card .review .review_show_more.line_clamp::after {
-  content: "Подробнее";
+  content: "Чиатать далее";
   width: auto;
   height: auto;
   position: absolute;
   left: 0;
   z-index: 99;
   top: 100%;
-  color: #1C1C1C;
+  color: #2E6AF2;
   cursor: pointer;
 }
 
