@@ -313,6 +313,11 @@ ul {
   color: #D03524;
 }
 
+.review-carousel .owl-stage-outer {
+  overflow: visible;
+  overflow-x: clip;
+}
+
 .review_card {
   border: 1px solid #ACA9A9;
   padding: 42px 33px 48px 22px;
@@ -342,8 +347,14 @@ ul {
     flex-direction: column;
   }
 }
+.review_card .user .user_img {
+  width: 102px;
+  height: 102px;
+}
 .review_card .user .user_img img {
   border-radius: 50%;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 .review_card .user .user_name {
   display: flex;
@@ -368,11 +379,22 @@ ul {
   text-align: center;
   color: #878686;
 }
+.review_card .review .review_show_more_btn {
+  color: black;
+}
 .review_card .review p {
   font-weight: 500;
+  z-index: 99;
   font-size: 14px;
   line-height: 22px;
   color: #2C2C2C;
+  display: block;
+  overflow: hidden;
+}
+.review_card .review p.line_clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 @media only screen and (max-width: 425px) {
   .review_card .review p {
@@ -447,18 +469,12 @@ ul {
   .header .header_content .header_contact {
     position: absolute;
     top: 300%;
-    left: 40%;
     z-index: 9;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .header .header_content .header_contact {
-    left: 30%;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .header .header_content .header_contact {
-    left: 20%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: -webkit-fill-available;
   }
 }
 .header .header_content .header_contact .header_contact_btn {
@@ -488,6 +504,7 @@ ul {
   position: absolute;
   z-index: 9;
   top: 10vh;
+  left: 0;
   width: -webkit-fill-available;
 }
 @media only screen and (max-width: 1024px) {
@@ -614,17 +631,8 @@ ul {
 .wrapper .section_1 .owl-carousel .owl-dots {
   position: absolute;
   top: 90%;
-  left: 46.5%;
-}
-@media only screen and (max-width: 1440px) {
-  .wrapper .section_1 .owl-carousel .owl-dots {
-    left: 45%;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .wrapper .section_1 .owl-carousel .owl-dots {
-    left: 35%;
-  }
+  left: 0;
+  width: -webkit-fill-available;
 }
 .wrapper .section_1 .owl-carousel .owl-dots .owl-dot span {
   background: rgba(217, 217, 217, 0.2);

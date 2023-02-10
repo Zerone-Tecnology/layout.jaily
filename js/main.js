@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     var text = document.querySelectorAll(".circle_p");
     for (var i = 0; i < text.length; i++) {
@@ -61,13 +61,14 @@ window.onload = function () {
     var open_modalbtn = document.querySelectorAll("#open_modal_btn");
     var close_modalbtn = document.querySelectorAll(".close_modal_btn");
     for (var i = 0; i < open_modalbtn.length; i++) {
-        open_modalbtn[i].onclick = function(){
+        open_modalbtn[i].onclick = function () {
             open_modal.style.display = ("block");
         }
     }
     for (var i = 0; i < close_modalbtn.length; i++) {
-        close_modalbtn[i].onclick = function(){
+        close_modalbtn[i].onclick = function () {
             open_modal.style.display = ("none");
         }
     }
-}
+    
+});

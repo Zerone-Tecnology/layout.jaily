@@ -94,5 +94,12 @@ $(window).load(function () {
 			scrollTop: $('#' + $(this).data('scroll')).offset().top,
 		}, 800)
 	});
-	$('.lazyload_for_div').lazyload(options);
+	$(".review_show_more").each(function (i) {
+		if ($(this).height() > 88) {
+			$(this).addClass('line_clamp');
+		}
+	});
+	if ($(this).hasClass('line_clamp')) {
+		$('<button type="button" class="review_show_more_btn">подробнее</button>').appendTo('.review');
+	}
 });
