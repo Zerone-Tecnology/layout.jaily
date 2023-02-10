@@ -623,6 +623,11 @@ ul {
 .wrapper .section_1 .owl-carousel .item {
   position: relative;
 }
+.wrapper .section_1 .owl-carousel .item img {
+  height: 906px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media only screen and (max-width: 425px) {
   .wrapper .section_1 .owl-carousel .item {
     overflow: hidden;

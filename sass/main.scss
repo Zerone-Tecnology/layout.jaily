@@ -727,6 +727,10 @@ ul {
 
       .item {
         position: relative;
+        img{
+          height: 906px;
+          object-fit: cover;
+        }
 
         @include respond-to(_425) {
           overflow: hidden;
