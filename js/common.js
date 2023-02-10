@@ -99,7 +99,13 @@ $(window).load(function () {
 			$(this).addClass('line_clamp');
 		}
 	});
-	if ($(this).hasClass('line_clamp')) {
-		$('<button type="button" class="review_show_more_btn">подробнее</button>').appendTo('.review');
-	}
+	$('.review_show_more').click(function(){
+		if($(this).hasClass("line_clamp")){
+			$(this).removeClass("line_clamp");
+			$(this).addClass("remove_show_more");
+		}else if($(this).hasClass("remove_show_more")){
+			$(this).removeClass("remove_show_more");
+			$(this).addClass("line_clamp");
+		}
+	});
 });

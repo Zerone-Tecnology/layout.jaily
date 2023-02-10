@@ -394,8 +394,6 @@ ul {
 .review_card {
   border: 1px solid #ACA9A9;
   padding: 42px 33px 48px 22px;
-  max-height: 300px;
-  height: 100vh;
 
   @include respond-to(_1200) {
     max-width: 100%;
@@ -455,27 +453,11 @@ ul {
   }
 
   .review {
-    .review_show_more_btn{
-      color: black;
-    }
+    position: relative;
 
-    // height: 100%;
-    // &::before{
-    //   background-color: white;
-    //   content: "";
-    //   position: absolute;
-    //   left: 0;
-    //   top: 99%;
-    //   height: 15%;
-    //   width: 100%;
-    //   z-index: 9;
-    //   display: block;
-    //   border: 1px solid #ACA9A9;
-    //   border-top: none;
-    // }
-    p {
+    .review_show_more {
+      min-height: 88px;
       font-weight: 500;
-      // position: absolute;
       z-index: 99;
       font-size: 14px;
       line-height: 22px;
@@ -483,17 +465,43 @@ ul {
       display: block;
       overflow: hidden;
 
-      &.line_clamp {
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-      }
-
 
       @include respond-to(_425) {
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
+      }
+
+      &.remove_show_more {
+        &::after {
+          content: 'Скрыть';
+          width: auto;
+          height: auto;
+          position: absolute;
+          left: 0;
+          z-index: 99;
+          top: 100%;
+          color: #1C1C1C;
+          cursor: pointer;
+        }
+      }
+
+      &.line_clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+
+        &::after {
+          content: 'Подробнее';
+          width: auto;
+          height: auto;
+          position: absolute;
+          left: 0;
+          z-index: 99;
+          top: 100%;
+          color: #1C1C1C;
+          cursor: pointer;
+        }
       }
     }
   }

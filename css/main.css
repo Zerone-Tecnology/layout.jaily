@@ -321,8 +321,6 @@ ul {
 .review_card {
   border: 1px solid #ACA9A9;
   padding: 42px 33px 48px 22px;
-  max-height: 300px;
-  height: 100vh;
 }
 @media only screen and (max-width: 1200px) {
   .review_card {
@@ -379,10 +377,11 @@ ul {
   text-align: center;
   color: #878686;
 }
-.review_card .review .review_show_more_btn {
-  color: black;
+.review_card .review {
+  position: relative;
 }
-.review_card .review p {
+.review_card .review .review_show_more {
+  min-height: 88px;
   font-weight: 500;
   z-index: 99;
   font-size: 14px;
@@ -391,17 +390,39 @@ ul {
   display: block;
   overflow: hidden;
 }
-.review_card .review p.line_clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
 @media only screen and (max-width: 425px) {
-  .review_card .review p {
+  .review_card .review .review_show_more {
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
   }
+}
+.review_card .review .review_show_more.remove_show_more::after {
+  content: "Скрыть";
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  top: 100%;
+  color: #1C1C1C;
+  cursor: pointer;
+}
+.review_card .review .review_show_more.line_clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.review_card .review .review_show_more.line_clamp::after {
+  content: "Подробнее";
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  top: 100%;
+  color: #1C1C1C;
+  cursor: pointer;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
