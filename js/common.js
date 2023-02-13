@@ -1,5 +1,18 @@
 $(function () {
 
+
+	$(".portfolio_carousel:lt(4)").show();
+	// When the gallery button is clicked
+	$("#gallery-btn").click(function (event) {
+		// Prevent default behavior
+		event.preventDefault();
+		var $hidden = $(".portfolio_carousel:hidden");
+		// Show the next four images
+		$($hidden).css("display", "block");
+	});
+
+
+
 	//SVG Fallback
 	if (!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function () {
@@ -99,11 +112,11 @@ $(window).load(function () {
 			$(this).addClass('line_clamp');
 		}
 	});
-	$('.review_show_more').click(function(){
-		if($(this).hasClass("line_clamp")){
+	$('.review_show_more').click(function () {
+		if ($(this).hasClass("line_clamp")) {
 			$(this).removeClass("line_clamp");
 			$(this).addClass("remove_show_more");
-		}else if($(this).hasClass("remove_show_more")){
+		} else if ($(this).hasClass("remove_show_more")) {
 			$(this).removeClass("remove_show_more");
 			$(this).addClass("line_clamp");
 		}
