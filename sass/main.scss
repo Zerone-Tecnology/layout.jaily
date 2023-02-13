@@ -815,6 +815,7 @@ ul {
         flex-direction: column;
         align-items: center;
         width: -webkit-fill-available;
+
         p {
           color: #2C2C2C;
           text-align: center;
@@ -891,6 +892,7 @@ ul {
         position: relative;
         width: 49%;
         margin: 5px;
+        display: none;
 
         @include respond-to(_1024) {
           width: 100%;
@@ -1023,6 +1025,9 @@ ul {
         //     }
         //   }
         // }
+        .portfolio_btn {
+          width: -webkit-fill-available;
+        }
       }
     }
 

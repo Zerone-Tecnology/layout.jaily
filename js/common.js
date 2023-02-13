@@ -104,13 +104,15 @@ $(function () {
 			$(this).addClass("line_clamp");
 		}
 	});
-	$(".portfolio_carousel:gt(+4)").css("display", "block");
+
+
+	$(".portfolio_carousel:lt(4)").show();
 	// When the gallery button is clicked
 	$("#gallery-btn").click(function () {
 		// Prevent default behavior
 		// event.preventDefault();
 		var $hidden = $(".portfolio_carousel:hidden");
 		// Show the next four images
-		$($hidden).css("display", "block");
+		$($hidden).slice(0, 4).fadeIn(800);
 	});
 });
