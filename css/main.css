@@ -764,7 +764,6 @@ ul {
   position: relative;
   width: 49%;
   margin: 5px;
-  display: none;
 }
 @media only screen and (max-width: 1024px) {
   .wrapper .section_3 .portfolio .portfolio_carousel {

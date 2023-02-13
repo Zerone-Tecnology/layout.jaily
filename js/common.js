@@ -1,17 +1,5 @@
+
 $(function () {
-
-
-	$(".portfolio_carousel:lt(4)").show();
-	// When the gallery button is clicked
-	$("#gallery-btn").click(function (event) {
-		// Prevent default behavior
-		event.preventDefault();
-		var $hidden = $(".portfolio_carousel:hidden");
-		// Show the next four images
-		$($hidden).css("display", "block");
-	});
-
-
 
 	//SVG Fallback
 	if (!Modernizr.svg) {
@@ -46,24 +34,19 @@ $(function () {
 			$.smoothScroll();
 		}
 	} catch (err) {
-
 	};
-
 	$("img, a").on("dragstart", function (event) { event.preventDefault(); });
+	$(window).load(function () {
+		$(".loader_inner").fadeOut();
+		$(".loader").delay(400).fadeOut("slow");
 
-});
-
-$(window).load(function () {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
+	});
 	$('.review-carousel').owlCarousel({
 		loop: true,
 		margin: 25,
 		nav: true,
 		responsiveClass: true,
-		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
+		navText: ["<img src='wp-content/themes/jailydesign/img/nav_carousel_left.png'>", "<img src='wp-content/themes/jailydesign/img/nav_carousel_right.png'>"],
 		responsive: {
 			0: {
 				items: 1
@@ -79,7 +62,7 @@ $(window).load(function () {
 		// stagePadding: 0,
 		nav: true,
 		responsiveClass: true,
-		navText: ["<img src='img/nav_carousel_left.png'>", "<img src='img/nav_carousel_right.png'>"],
+		navText: ["<img src='wp-content/themes/jailydesign/img/nav_carousel_left.png'>", "<img src='wp-content/themes/jailydesign/img/nav_carousel_right.png'>"],
 		items: 1
 	})
 	if ($(window).width() < 321) {
@@ -120,5 +103,14 @@ $(window).load(function () {
 			$(this).removeClass("remove_show_more");
 			$(this).addClass("line_clamp");
 		}
+	});
+	$(".portfolio_carousel:gt(+4)").css("display", "block");
+	// When the gallery button is clicked
+	$("#gallery-btn").click(function () {
+		// Prevent default behavior
+		// event.preventDefault();
+		var $hidden = $(".portfolio_carousel:hidden");
+		// Show the next four images
+		$($hidden).css("display", "block");
 	});
 });

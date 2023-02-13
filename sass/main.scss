@@ -891,7 +891,6 @@ ul {
         position: relative;
         width: 49%;
         margin: 5px;
-        display: none;
 
         @include respond-to(_1024) {
           width: 100%;
