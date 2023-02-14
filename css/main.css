@@ -933,6 +933,7 @@ ul {
   line-height: 24px;
   color: #2C2C2C;
   text-align: center;
+  margin: 50px 0 8px 0;
 }
 .wrapper .section_4 .order_card_wrapper .order_card .price span {
   font-weight: 700;
