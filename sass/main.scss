@@ -356,7 +356,7 @@ ul {
 
   &.red {
     background: #E2193A;
-    padding: 16px 59px;
+    padding: 10px 8px;
     border: 1px solid rgba(226, 25, 58, 0.8);
 
     &:hover {
@@ -1057,11 +1057,16 @@ ul {
 
       .order_card {
         background: #F5F5F5;
-        padding: 36px 32px;
-        max-width: 348px;
+        padding: 30px 26px;
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         @include respond-to(_1024) {
           margin: 20px 0;
+          width: 100%;
+          max-width: 340px;
         }
 
         .price_articles {
@@ -1083,8 +1088,6 @@ ul {
 
         .order_card_list {
           padding-left: 15px;
-          max-height: 240px;
-          height: 100%;
 
           li {
             color: #2C2C2C;
@@ -1113,6 +1116,11 @@ ul {
           & span {
             font-weight: 700;
           }
+        }
+
+        .order_card_bottom {
+          display: flex;
+          flex-direction: column;
         }
 
         .description {

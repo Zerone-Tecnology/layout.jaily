@@ -290,7 +290,7 @@ ul {
 }
 .default_btn.red {
   background: #E2193A;
-  padding: 16px 59px;
+  padding: 10px 8px;
   border: 1px solid rgba(226, 25, 58, 0.8);
 }
 .default_btn.red:hover {
@@ -883,12 +883,17 @@ ul {
 }
 .wrapper .section_4 .order_card_wrapper .order_card {
   background: #F5F5F5;
-  padding: 36px 32px;
-  max-width: 348px;
+  padding: 30px 26px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 1024px) {
   .wrapper .section_4 .order_card_wrapper .order_card {
     margin: 20px 0;
+    width: 100%;
+    max-width: 340px;
   }
 }
 .wrapper .section_4 .order_card_wrapper .order_card .price_articles {
@@ -907,8 +912,6 @@ ul {
 }
 .wrapper .section_4 .order_card_wrapper .order_card .order_card_list {
   padding-left: 15px;
-  max-height: 240px;
-  height: 100%;
 }
 .wrapper .section_4 .order_card_wrapper .order_card .order_card_list li {
   color: #2C2C2C;
@@ -933,6 +936,10 @@ ul {
 }
 .wrapper .section_4 .order_card_wrapper .order_card .price span {
   font-weight: 700;
+}
+.wrapper .section_4 .order_card_wrapper .order_card .order_card_bottom {
+  display: flex;
+  flex-direction: column;
 }
 .wrapper .section_4 .order_card_wrapper .order_card .description {
   font-weight: 500;
