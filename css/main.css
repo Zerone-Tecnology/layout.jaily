@@ -896,10 +896,6 @@ ul {
     max-width: 340px;
   }
 }
-.wrapper .section_4 .order_card_wrapper .order_card .price_articles {
-  max-height: 120px;
-  height: 100%;
-}
 .wrapper .section_4 .order_card_wrapper .order_card h5 {
   text-align: center;
   margin: 0;
