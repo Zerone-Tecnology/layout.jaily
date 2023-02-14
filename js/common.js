@@ -81,15 +81,17 @@ $(function () {
 	$('.nav li a').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: $('#' + $(this).data('scroll')).offset().top,
+			scrollTop: $('#' + $(this).prop('href')).offset().top,
 		}, 800)
 	});
+
 	$('.footer_nav li a').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
 			scrollTop: $('#' + $(this).data('scroll')).offset().top,
 		}, 800)
 	});
+
 	$(".review_show_more").each(function (i) {
 		if ($(this).height() > 88) {
 			$(this).addClass('line_clamp');
@@ -106,7 +108,7 @@ $(function () {
 	});
 
 
-	$(".portfolio_carousel:lt(4)").show();
+	$(".portfolio_carousel:lt(5)").show();
 	// When the gallery button is clicked
 	$("#gallery-btn").click(function () {
 		// Prevent default behavior

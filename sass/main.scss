@@ -456,7 +456,7 @@ ul {
     position: relative;
     transition: all .3s ease;
 
-    .review_show_more {
+    p {
       min-height: 88px;
       font-weight: 500;
       z-index: 99;
@@ -888,11 +888,16 @@ ul {
     .portfolio {
       overflow: hidden;
 
-      .portfolio_carousel {
-        position: relative;
+      .portfolio_filter {
+
         width: 49%;
         margin: 5px;
-        display: none;
+
+        .portfolio_carousel {
+          display: none;
+
+          position: relative;
+        }
 
         @include respond-to(_1024) {
           width: 100%;

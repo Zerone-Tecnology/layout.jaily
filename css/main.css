@@ -381,7 +381,7 @@ ul {
   position: relative;
   transition: all 0.3s ease;
 }
-.review_card .review .review_show_more {
+.review_card .review p {
   min-height: 88px;
   font-weight: 500;
   z-index: 99;
@@ -393,13 +393,13 @@ ul {
   transition: all 0.3s ease;
 }
 @media only screen and (max-width: 425px) {
-  .review_card .review .review_show_more {
+  .review_card .review p {
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
   }
 }
-.review_card .review .review_show_more.remove_show_more::after {
+.review_card .review p.remove_show_more::after {
   content: "Свернуть";
   width: auto;
   height: auto;
@@ -410,13 +410,13 @@ ul {
   color: #2E6AF2;
   cursor: pointer;
 }
-.review_card .review .review_show_more.line_clamp {
+.review_card .review p.line_clamp {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   transition: all 0.3s ease;
 }
-.review_card .review .review_show_more.line_clamp::after {
+.review_card .review p.line_clamp::after {
   content: "Чиатать далее";
   width: auto;
   height: auto;
@@ -760,33 +760,35 @@ ul {
 .wrapper .section_3 .portfolio {
   overflow: hidden;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel {
-  position: relative;
+.wrapper .section_3 .portfolio .portfolio_filter {
   width: 49%;
   margin: 5px;
+}
+.wrapper .section_3 .portfolio .portfolio_filter .portfolio_carousel {
   display: none;
+  position: relative;
 }
 @media only screen and (max-width: 1024px) {
-  .wrapper .section_3 .portfolio .portfolio_carousel {
+  .wrapper .section_3 .portfolio .portfolio_filter {
     width: 100%;
     margin: 5px 0;
   }
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel .item {
+.wrapper .section_3 .portfolio .portfolio_filter .owl-carousel .item {
   overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #1C1C1C;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .owl-carousel .item img {
+.wrapper .section_3 .portfolio .portfolio_filter .owl-carousel .item img {
   max-height: 590px;
   width: auto;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .owl-dot {
+.wrapper .section_3 .portfolio .portfolio_filter .owl-dot {
   display: none;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .owl-nav {
+.wrapper .section_3 .portfolio .portfolio_filter .owl-nav {
   position: absolute;
   top: 45%;
   z-index: 9;
@@ -794,10 +796,10 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .portfolio_carousel_articles {
+.wrapper .section_3 .portfolio .portfolio_filter .portfolio_carousel_articles {
   transition: all 0.3s ease;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .portfolio_carousel_articles h5 {
+.wrapper .section_3 .portfolio .portfolio_filter .portfolio_carousel_articles h5 {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease;
@@ -814,28 +816,28 @@ ul {
   color: #F5F5F5;
 }
 @media only screen and (max-width: 425px) {
-  .wrapper .section_3 .portfolio .portfolio_carousel .portfolio_carousel_articles h5 {
+  .wrapper .section_3 .portfolio .portfolio_filter .portfolio_carousel_articles h5 {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     left: 2px;
   }
 }
-.wrapper .section_3 .portfolio .portfolio_carousel .item {
+.wrapper .section_3 .portfolio .portfolio_filter .item {
   transition: all 0.3s ease;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel:hover .portfolio_carousel_articles {
+.wrapper .section_3 .portfolio .portfolio_filter:hover .portfolio_carousel_articles {
   transition: all 0.3s ease;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel:hover .portfolio_carousel_articles h5 {
+.wrapper .section_3 .portfolio .portfolio_filter:hover .portfolio_carousel_articles h5 {
   transition: all 0.3s ease;
   visibility: visible;
   opacity: 1;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel:hover .item {
+.wrapper .section_3 .portfolio .portfolio_filter:hover .item {
   transition: all 0.3s ease;
 }
-.wrapper .section_3 .portfolio .portfolio_carousel:hover .item::before {
+.wrapper .section_3 .portfolio .portfolio_filter:hover .item::before {
   transition: all 0.3s ease;
   background: rgba(0, 0, 0, 0.52);
   background-repeat: no-repeat;
