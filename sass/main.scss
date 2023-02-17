@@ -758,7 +758,7 @@ ul {
           @include respond-to(_768) {
             max-height: 718px;
             width: auto;
-            height: 100vh;
+            height: 100%;
           }
         }
       }

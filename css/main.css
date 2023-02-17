@@ -654,7 +654,7 @@ ul {
   .wrapper .section_1 .owl-carousel .item img {
     max-height: 718px;
     width: auto;
-    height: 100vh;
+    height: 100%;
   }
 }
 .wrapper .section_1 .owl-carousel .owl-dots {
