@@ -388,6 +388,9 @@ ul {
   .owl-stage-outer {
     overflow: visible;
     overflow-x: clip;
+    @include respond-to(_768){
+      overflow: hidden;
+    }
   }
 }
 

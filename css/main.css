@@ -317,6 +317,11 @@ ul {
   overflow: visible;
   overflow-x: clip;
 }
+@media only screen and (max-width: 768px) {
+  .review-carousel .owl-stage-outer {
+    overflow: hidden;
+  }
+}
 
 .review_card {
   border: 1px solid #ACA9A9;
